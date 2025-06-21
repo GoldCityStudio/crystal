@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
   },
+  verification: {
+    google: 't_v4vD0YodbPwWthCRzRVJAjVT-Zu4JqNcPvRJN4des',
+  },
 }
 
 export default function RootLayout({
@@ -24,6 +27,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="google-site-verification" content="t_v4vD0YodbPwWthCRzRVJAjVT-Zu4JqNcPvRJN4des" />
+      </head>
       <body className={inter.className}>
         <div className="min-h-screen bg-gray-50">
           {children}
